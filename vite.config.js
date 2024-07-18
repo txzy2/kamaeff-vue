@@ -11,9 +11,9 @@ const vitePWA = VitePWA({
   outDir: 'dist',
 
   manifest: {
-    name: 'title',
-    short_name: 'title',
-    description: 'description',
+    name: 'kamaeff',
+    short_name: 'kamaeff',
+    description: 'Site by Anton Kamaev',
     theme_color: '#181818',
     display: 'standalone',
     icons: [

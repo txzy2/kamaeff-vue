@@ -9,6 +9,40 @@ main {
 
   height: 80vh;
 
+  .stack {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+
+    code {
+      padding: 5px 10px;
+
+      color: var(--color-background-mute);
+      background: var(--color-text);
+
+      border-radius: 8px;
+
+      transform: rotate(-90deg);
+
+      .typingEffect {
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid white;
+        font-size: 28px;
+        font-weight: 600;
+        white-space: nowrap;
+        animation: typing 3s forwards;
+      }
+    }
+
+    .info {
+      font-size: 24px;
+
+      color: var(--color-heading);
+    }
+  }
+
   .text {
     max-width: 30%;
     text-align: justify;
@@ -45,6 +79,15 @@ main {
         transform: translateY(-5px);
       }
     }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
