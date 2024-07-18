@@ -5,6 +5,7 @@ import { Loader } from 'lucide-vue-next';
 import HeaderTemplate from '@/components/header/HeaderTemplate.vue'
 import MainTemplate from '@/components/main/MainTemplate.vue'
 import FooterTemplate from '@/components/footer/FooterTemplate.vue'
+import LogoTemplate from '@/components/icons/LogoTemplate.vue'
 
 const loader = ref(true)
 
@@ -24,10 +25,15 @@ onMounted(() => {
     <div v-if="loader"
          class="loader">
       <div class="container">
-        <Loader class="item"
-                :size="28" />
-        <p>#kamaeff ;)</p>
+
+        <LogoTemplate />
+        <div class="text">
+          <Loader class="item"
+                  :size="28" />
+          <span>#Loading</span>
+        </div>
       </div>
+
     </div>
   </transition>
 

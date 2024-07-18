@@ -1,4 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
 
 @import "./base.css";
 @import "./fonts.css";
@@ -43,16 +44,25 @@ body {
 
   .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
 
     gap: 5px;
 
-    .item {
-      animation: rotate 2s linear infinite;
-    }
+    .text {
+      display: flex;
+      align-items: center;
 
-    p {
-      font-size: 20px;
+      gap: 5px;
+
+      .item {
+        animation: rotate 2s linear infinite;
+      }
+
+      span {
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+      }
     }
   }
 }
