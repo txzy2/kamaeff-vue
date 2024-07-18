@@ -1,0 +1,67 @@
+header {
+  position: relative;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+  .profile {
+    display: none;
+    position: absolute;
+
+    right: 3%;
+
+    button {
+      cursor: pointer;
+
+      background: inherit;
+      outline: none;
+      border: none;
+
+      color: var(--color-text);
+    }
+
+    .modal {
+      position: absolute;
+
+      top: 2%;
+      right: 2%;
+
+      width: 300px;
+      height: 300px;
+
+      background-color: var(--color-background-mute);
+
+      border-radius: 10px;
+
+      button {
+        position: absolute;
+
+        top: 2%;
+        right: 3%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .profile {
+      display: block;
+
+      .modal {
+        width: 400px;
+        height: 50vh;
+      }
+    }
+  }
+}
