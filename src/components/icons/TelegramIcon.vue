@@ -25,7 +25,6 @@
       </g>
     </svg>
   </div>
-
 </template>
 
 <style scoped>

@@ -1,104 +1,84 @@
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0 auto;
-  gap: 10px;
-
-  height: 80vh;
-
-  .stack {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    margin: 10px 0;
+    gap: 10px;
 
-    code {
-      padding: 5px 10px;
+    height: 95vh;
 
-      color: var(--color-background-mute);
-      background: var(--color-text);
+    .logo {
+        display: flex;
+        align-items: center;
 
-      border-radius: 8px;
+        gap: 20px;
 
-      transform: rotate(-90deg);
+        .stack {
+            display: flex;
+            align-items: center;
 
-      .typingEffect {
-        width: 0;
-        overflow: hidden;
-        border-right: 2px solid white;
-        font-size: 28px;
-        font-weight: 600;
-        white-space: nowrap;
-        animation: typing 3s forwards;
-      }
+            font-size: 24px;
+            color: var(--color-heading);
+        }
     }
 
-    .info {
-      font-size: 24px;
+    .text {
+        max-width: 30%;
+        text-align: justify;
 
-      color: var(--color-heading);
-    }
-  }
+        font-weight: 300;
+        font-size: 15px;
 
-  .text {
-    max-width: 30%;
-    text-align: justify;
+        line-height: 1.2;
 
-    font-weight: 300;
-    font-size: 15px;
+        a,
+        .gray {
+            color: var(--color-heading);
+        }
 
-    line-height: 1.2;
-
-    a,
-    .gray {
-      color: var(--color-heading);
+        a:hover {
+            color: var(--color-text);
+        }
     }
 
-    a:hover {
-      color: var(--color-text);
+    .links {
+        display: flex;
+        align-items: center;
+
+        gap: 5px;
+
+        .icon {
+            color: var(--color-heading);
+
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--color-text);
+
+                transform: translateY(-5px);
+            }
+        }
     }
-  }
-
-  .links {
-    display: flex;
-    align-items: center;
-
-    gap: 5px;
-
-    .icon {
-      color: var(--color-heading);
-
-      transition: 0.3s ease-in-out;
-
-      &:hover {
-        color: var(--color-text);
-
-        transform: translateY(-5px);
-      }
-    }
-  }
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
-  main .text {
-    max-width: 50%;
-  }
+    main .text {
+        max-width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
-  main .text {
-    max-width: 90%;
-  }
+    main .text {
+        max-width: 90%;
+    }
 }

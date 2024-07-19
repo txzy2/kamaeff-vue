@@ -10,79 +10,79 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
 }
 
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 
-  overflow-y: hidden;
+    overflow-y: hidden;
 
-  color: var(--color-text);
-  background: var(--color-background);
+    color: var(--color-text);
+    background: var(--color-background);
 
-  transition:
-    color 0.5s,
-    background-color 0.5s;
+    transition:
+        color 0.5s,
+        background-color 0.5s;
 
-  font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif;
 
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100vh;
-
-  .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    gap: 5px;
+    height: 100vh;
 
-    .text {
-      display: flex;
-      align-items: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      gap: 5px;
+        gap: 5px;
 
-      .item {
-        animation: rotate 2s linear infinite;
-      }
+        .text {
+            display: flex;
+            align-items: center;
 
-      span {
-        font-family: "Rubik", sans-serif;
-        font-size: 20px;
-      }
+            gap: 5px;
+
+            .item {
+                animation: rotate 2s linear infinite;
+            }
+
+            span {
+                font-family: "Rubik", sans-serif;
+                font-size: 20px;
+            }
+        }
     }
-  }
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 
 .fade-enter,
 .fade-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
