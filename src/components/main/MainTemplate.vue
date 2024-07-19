@@ -2,6 +2,7 @@
 import LogoTemplate from '@/components/icons/LogoTemplate.vue';
 import TelegramIcon from '@/components/icons/TelegramIcon.vue';
 import VkIcon from '@/components/icons/VkIcon.vue';
+import FlIcon from '@/components/icons/FlIcon.vue';
 
 import {Github} from 'lucide-vue-next';
 </script>
@@ -50,6 +51,10 @@ import {Github} from 'lucide-vue-next';
 
       <a href="https://github.com/kamaeff" target="_blank">
         <VkIcon />
+      </a>
+
+      <a href="https://github.com/kamaeff" target="_blank">
+        <FlIcon />
       </a>
     </div>
   </main>
