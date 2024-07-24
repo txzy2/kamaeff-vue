@@ -3,7 +3,7 @@ import {onMounted, ref} from 'vue';
 import {Loader} from 'lucide-vue-next';
 import MainTemplate from '@/components/main/MainTemplate.vue';
 import FooterTemplate from '@/components/footer/FooterTemplate.vue';
-import LogoTemplate from '@/components/icons/LogoTemplate.vue';
+import LogoTemplate from '@/shared/icons/LogoTemplate.vue';
 // import HeaderTemplate from '@/components/header/HeaderTemplate.vue';
 
 const loader = ref(true);

@@ -1,8 +1,8 @@
 <script setup>
-import LogoTemplate from '@/components/icons/LogoTemplate.vue';
-import TelegramIcon from '@/components/icons/TelegramIcon.vue';
-import VkIcon from '@/components/icons/VkIcon.vue';
-import FlIcon from '@/components/icons/FlIcon.vue';
+import LogoTemplate from '@/shared/icons/LogoTemplate.vue';
+import TelegramIcon from '@/shared/icons/TelegramIcon.vue';
+import VkIcon from '@/shared/icons/VkIcon.vue';
+import FlIcon from '@/shared/icons/FlIcon.vue';
 
 import {Github} from 'lucide-vue-next';
 </script>
