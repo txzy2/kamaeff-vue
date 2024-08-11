@@ -33,6 +33,7 @@ const vitePWA = VitePWA({
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/kamaeff-vue/',
   plugins: [vue(), vueDevTools(), vitePWA],
   server: {
     port: 5123
