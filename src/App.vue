@@ -4,6 +4,7 @@ import {Loader} from 'lucide-vue-next';
 import MainTemplate from '@/components/main/MainTemplate.vue';
 import FooterTemplate from '@/components/footer/FooterTemplate.vue';
 import LogoTemplate from '@/shared/icons/LogoTemplate.vue';
+import LoaderTemplate from '@/shared/utils/LoaderTemplate.vue';
 // import HeaderTemplate from '@/components/header/HeaderTemplate.vue';
 
 const loader = ref(true);
@@ -19,16 +20,13 @@ onMounted(() => {
 
 <template>
   <transition name="fade" mode="out-in">
-    <div v-if="loader" class="loader">
-      <div class="container">
-        <LogoTemplate />
-
-        <div class="text">
-          <Loader class="item" :size="28" />
-          <span>#Loading</span>
-        </div>
-      </div>
-    </div>
+    <LoaderTemplate
+      v-if="loader"
+      :title="{text: '#Kamaeff', size: 20}"
+      :isLoading="true"
+      :iconSize="25"
+      :needSub="false"
+    />
   </transition>
 
   <div v-show="!loader">

@@ -1,85 +1,84 @@
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  height: 95vh;
+
+  .logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    gap: 10px;
+    gap: 20px;
 
-    height: 95vh;
+    .stack {
+      display: flex;
+      align-items: center;
 
-    .logo {
-        display: flex;
-        align-items: center;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
 
-        gap: 20px;
+  .text {
+    max-width: 30%;
+    text-align: justify;
 
-        .stack {
-            display: flex;
-            align-items: center;
+    font-weight: 300;
+    font-size: 15px;
 
-            font-size: 24px;
-            color: var(--color-heading);
-        }
+    line-height: 1.2;
+
+    a,
+    .gray {
+      color: var(--color-heading);
     }
 
-    .text {
-        max-width: 30%;
-        text-align: justify;
-
-        font-weight: 300;
-        font-size: 15px;
-
-        line-height: 1.2;
-
-        a,
-        .gray {
-            color: var(--color-heading);
-        }
-
-        a:hover {
-            color: var(--color-text);
-        }
+    a:hover {
+      color: var(--color-text);
     }
+  }
 
-    .links {
-        display: flex;
-        align-items: center;
+  .links {
+    display: flex;
+    align-items: center;
 
+    gap: 5px;
 
-        gap: 5px;
+    .icon {
+      color: var(--color-heading);
 
-        .icon {
-            color: var(--color-heading);
+      transition: 0.3s ease-in-out;
 
-            transition: 0.3s ease-in-out;
+      &:hover {
+        color: var(--color-text);
 
-            &:hover {
-                color: var(--color-text);
-
-                transform: translateY(-5px);
-            }
-        }
+        transform: translateY(-5px);
+      }
     }
+  }
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
-    main .text {
-        max-width: 50%;
-    }
+  main .text {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
-    main .text {
-        max-width: 90%;
-    }
+  main .text {
+    max-width: 90%;
+  }
 }

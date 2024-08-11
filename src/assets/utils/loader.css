@@ -1,0 +1,33 @@
+.loader {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  .item {
+    animation: rotate 2s linear infinite;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      padding: 0;
+      line-height: 1;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
