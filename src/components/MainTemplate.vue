@@ -1,16 +1,13 @@
-<script setup>
-import LogoTemplate from '@/shared/icons/LogoTemplate.vue';
-import TelegramIcon from '@/shared/icons/TelegramIcon.vue';
-import VkIcon from '@/shared/icons/VkIcon.vue';
-import FlIcon from '@/shared/icons/FlIcon.vue';
-
+<script setup lang="ts">
 import {Github} from 'lucide-vue-next';
+
+import {Logo, Fl, Vk, Telegram} from '@/components/shared';
 </script>
 
 <template>
   <main>
     <div class="logo">
-      <LogoTemplate />
+      <Logo />
 
       <div class="stack">
         React
@@ -22,7 +19,8 @@ import {Github} from 'lucide-vue-next';
     </div>
 
     <div class="text">
-      Hi! My name is <a href="https://t.me/kamaeff2" target="_blank">Anton.</a>
+      Hi! My name is
+      <a href="https://t.me/kamaeff2" target="_blank">Anton.</a>
       <span>
         I am an aspiring frontend developer. I'm just starting my way. During my
         studies I managed to to realize few, but very interesting projects. You
@@ -42,19 +40,19 @@ import {Github} from 'lucide-vue-next';
 
     <div class="links">
       <a href="https://t.me/kamaeff2" target="_blank">
-        <TelegramIcon />
+        <Telegram />
       </a>
 
-      <a href="https://github.com/kamaeff" target="_blank">
+      <a href="https://github.com/txzy2" target="_blank">
         <Github :size="30" class="icon" />
       </a>
 
-      <a href="https://github.com/kamaeff" target="_blank">
-        <VkIcon />
+      <a href="https://vk.com/antoster2" target="_blank">
+        <Vk />
       </a>
 
-      <a href="https://github.com/kamaeff" target="_blank">
-        <FlIcon />
+      <a href="https://www.fl.ru/users/kamaeff2/" target="_blank">
+        <Fl />
       </a>
     </div>
   </main>

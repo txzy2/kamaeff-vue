@@ -1,28 +1,21 @@
 <script setup>
 import {onMounted, ref} from 'vue';
-import {Loader} from 'lucide-vue-next';
-import MainTemplate from '@/components/main/MainTemplate.vue';
-import FooterTemplate from '@/components/footer/FooterTemplate.vue';
-import LogoTemplate from '@/shared/icons/LogoTemplate.vue';
-import LoaderTemplate from '@/shared/utils/LoaderTemplate.vue';
-// import HeaderTemplate from '@/components/header/HeaderTemplate.vue';
+
+import {Main, Footer} from '@/components';
+import {Loader} from '@/components/shared';
 
 const loader = ref(true);
 
 onMounted(() => {
-  const timeout = setTimeout(() => {
-    loader.value = false;
-  }, 1500);
-
-  return () => clearTimeout(timeout);
+  loader.value = false;
 });
 </script>
 
 <template>
   <transition name="fade" mode="out-in">
-    <LoaderTemplate
+    <Loader
       v-if="loader"
-      :title="{text: '#Kamaeff', size: 20}"
+      :title="{text: '', size: 20}"
       :isLoading="true"
       :iconSize="25"
       :needSub="false"
@@ -30,8 +23,7 @@ onMounted(() => {
   </transition>
 
   <div v-show="!loader">
-    <!--<HeaderTemplate />-->
-    <MainTemplate />
-    <FooterTemplate />
+    <Main />
+    <Footer />
   </div>
 </template>

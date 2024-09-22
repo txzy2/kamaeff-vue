@@ -5,6 +5,7 @@ import {ChevronsDown} from 'lucide-vue-next';
 <template>
   <footer>
     <ChevronsDown :size="20" class="show" />
+    <!-- <div class="show">Projects</div> -->
 
     <div class="container">
       <div class="content">
